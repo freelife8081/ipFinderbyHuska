@@ -1,0 +1,72 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+#info {
+    font-size: 22px;
+    padding: 20px;
+    color: #fff;
+    background-color: #4CAF50; /* Green background */
+    border: 5px solid transparent;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: borderAnimation 3s infinite ease-in-out;
+}
+
+/* Border animation */
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff5733; /* Red */
+    }
+    33% {
+        border-color: #ffc107; /* Yellow */
+    }
+    66% {
+        border-color: #00bcd4; /* Cyan */
+    }
+    100% {
+        border-color: #ff5733; /* Red */
+    }
+}
+
+/* Text styling for different parts */
+.city {
+    color: #ff5733;  /* Red */
+    font-size: 26px;
+}
+
+.region {
+    color: red; /* Cyan */
+    font-size: 24px;
+}
+
+.country {
+    color: #ffc107; /* Yellow */
+    font-size: 22px;
+}
+
+.ip {
+    color: #8e44ad; /* Purple */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    #info {
+        width: 80%;
+        font-size: 18px;
+    }
+}
