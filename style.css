@@ -70,3 +70,11 @@ body {
         font-size: 18px;
     }
 }
+
+.pi{
+    color: white;
+    background-color: red;
+    font-family: fantasy;
+    border-radius: 10px;
+    text-transformation: none;
+}
